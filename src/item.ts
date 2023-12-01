@@ -18,3 +18,4 @@ export function createItem(quantity:number, name: string, price: number, descrip
         description,
   };
 }
+console.log()
