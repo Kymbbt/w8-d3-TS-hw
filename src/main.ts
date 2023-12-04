@@ -1,6 +1,8 @@
 
-import { createUser, addToCart, removeFromCart, removeQuantityFromCart, cartTotal, printCart } from './user';
+import { createUser, addToCart, removeFromCart, cartTotal, printCart } from './user';
 import { createItem } from './item';
+
+// removeQuantityFromCart
 
 const user = createUser('John Doe', 30);
 
@@ -21,6 +23,7 @@ console.log('Cart Total:', cartTotal(user));
 addToCart(user, itemB);
 addToCart(user, itemC);
 addToCart(user, itemA);
+addToCart(user, itemD);
 
 printCart(user);
 

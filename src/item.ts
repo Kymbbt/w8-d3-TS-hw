@@ -11,11 +11,11 @@ export type Item = {
 
 export function createItem(quantity:number, name: string, price: number, description: string): Item {
     return {
-        quantity: 1,
+        quantity, 
         id: uuidv4(),
         name,
         price,
         description,
   };
 }
-console.log()
+console.log(createItem(20,"Apple", 20, "red"))
